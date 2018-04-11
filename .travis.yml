@@ -34,7 +34,8 @@ before_script:
   - go get github.com/golang/lint/golint
   - go get honnef.co/go/tools/cmd/megacheck
   - go get github.com/fzipp/gocyclo
-
+  - go get github.com/mattn/goveralls
+  
 script:
   - ./build
   - test -z $(gofmt -s -l $GO_FILES)
@@ -43,3 +44,4 @@ script:
   - megacheck ./...
   - gocyclo -over 19 $GO_FILES
   - golint -set_exit_status $(go list ./...)
+  - $GOPATH/bin/goveralls -service=travis-ci
