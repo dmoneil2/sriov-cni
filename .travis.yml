@@ -38,7 +38,7 @@ script:
   - bash <(curl -s https://codecov.io/bash)
   - goveralls -service=travis-ci
   - go vet -v $(go list ./... | grep -v /vendor/)
-  - megacheck -v $(go list ./... | grep -v /vendor/)
+  - megacheck $(go list ./... | grep -v /vendor/)
   - gocyclo -over 19 $(go list ./... | grep -v /vendor/)
   
 #after_success:
