@@ -35,6 +35,8 @@ script:
   - go test -v $(go list ./... | grep -v /vendor/)
   - go test -v -cover $(go list ./... | grep -v /vendor/)
   - golint sriov/sriov.go
+  - bash <(curl -s https://codecov.io/bash)
+  - goveralls -service=travis-ci
 #  - go test -v -race ./...
 #  - go vet ./...
 #  - megacheck ./...
@@ -42,6 +44,6 @@ script:
 #  - golint -set_exit_status $(go list ./...)
 #  - go test -race -coverprofile=coverage.txt -covermode=atomic
 
-after_success:
-  - bash <(curl -s https://codecov.io/bash)
-  - goveralls -service=travis-ci
+#after_success:
+#  - bash <(curl -s https://codecov.io/bash)
+#  - goveralls -service=travis-ci
