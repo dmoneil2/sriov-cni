@@ -32,8 +32,8 @@ before_script:
   
 script:
   - ./build
-  - go test -v sriov/...
-  - go test -v sriov/... -cover
+  - go test -v $(go list ./... | grep -v /vendor/)
+  - go test -v -cover $(go list ./... | grep -v /vendor/)
   - golint sriov/sriov.go
 #  - go test -v -race ./...
 #  - go vet ./...
