@@ -32,7 +32,8 @@ before_script:
   
 script:
   - ./build
-#  - test -z $(gofmt -s -l $GO_FILES)
+  - go test -v 
+  - go test -v -cover
 #  - go test -v -race ./...
 #  - go vet ./...
 #  - megacheck ./...
