@@ -29,6 +29,7 @@ before_script:
   - go get honnef.co/go/tools/cmd/megacheck
   - go get github.com/fzipp/gocyclo
   - go get github.com/mattn/goveralls
+  - go get honnef.co/go/tools/cmd/staticcheck
   
 script:
   - ./build
@@ -40,6 +41,7 @@ script:
   - go vet -v $(go list ./... | grep -v /vendor/)
   - megacheck $(go list ./... | grep -v /vendor/)
   - gocyclo -over 19 $(go list ./... | grep -v /vendor/)
+  - staticcheck $(go list ./... | grep -v /vendor/)
   
 #after_success:
 #  - bash <(curl -s https://codecov.io/bash)
