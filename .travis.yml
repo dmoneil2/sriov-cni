@@ -30,6 +30,7 @@ notifications:
   email: false
  
 before_script:
+  - go get -t -v ./...
   - GO_FILES=$(find . -iname '*.go' -type f | grep -v /vendor/) # All the .go files, excluding vendor/
   - go get github.com/golang/lint/golint
   - go get honnef.co/go/tools/cmd/megacheck
@@ -45,3 +46,7 @@ script:
   - gocyclo -over 19 $GO_FILES
   - golint -set_exit_status $(go list ./...)
   - $GOPATH/bin/goveralls -service=travis-ci
+  - go test -race -coverprofile=coverage.txt -covermode=atomic
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
