@@ -8,7 +8,7 @@
 [![Coverage Status](https://coveralls.io/repos/github/dmoneil2/sriov-cni/badge.svg?branch=master&style=flat-square)](https://coveralls.io/github/dmoneil2/sriov-cni) 
 [![CodeCov](https://codecov.io/gh/dmoneil2/sriov-cni/branch/master/graph/badge.svg?style=flat-square)](https://codecov.io/github/dmoneil2/sriov-cni/) 
 [![Code consistency](https://squizlabs.github.io/PHP_CodeSniffer/analysis/dmoneil2/sriov-cni/grade.svg?style=flat-square)](https://squizlabs.github.io/PHP_CodeSniffer/analysis/dmoneil2/sriov-cni)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/683459a5a71c4875956cf23078a0c39b)](https://www.codacy.com/app/dmoneil2/sriov-cni?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=dmoneil2/sriov-cni&amp;utm_campaign=Badge_Grade)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/e0d913c0217743b1b6bac153d0c2286d)](https://www.codacy.com/app/dmoneil2/sriov-cni?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=dmoneil2/sriov-cni&amp;utm_campaign=Badge_Grade)
 
    * [SR-IOV CNI plugin](#sr-iov-cni-plugin)
       * [Build](#build)
