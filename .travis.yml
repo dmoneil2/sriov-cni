@@ -15,9 +15,10 @@ go:
   - master 
   - release
   - tip
+  
+env:
+  - GO15VENDOREXPERIMENT=1
 
-# Skip the install step. Don't `go get` dependencies. Only build with the
-# code in vendor/
 install: true
 
 matrix:
@@ -35,6 +36,7 @@ before_script:
   - go get github.com/fzipp/gocyclo
 
 script:
+  - ./build
   - test -z $(gofmt -s -l $GO_FILES)
   - go test -v -race ./...
   - go vet ./...
