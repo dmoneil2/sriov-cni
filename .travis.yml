@@ -32,8 +32,8 @@ before_script:
   
 script:
   - ./build
-  - go test -v 
-  - go test -v -cover
+  - go test -v ./...
+  - go test -v ./... -cover
   - golint sriov/sriov.go
 #  - go test -v -race ./...
 #  - go vet ./...
