@@ -37,13 +37,10 @@ script:
   - golint sriov/sriov.go
   - bash <(curl -s https://codecov.io/bash)
   - goveralls -service=travis-ci
-#  - go test -v -race ./...
-#  - go vet ./...
-#  - megacheck ./...
-#  - gocyclo -over 19 $GO_FILES
-#  - golint -set_exit_status $(go list ./...)
-#  - go test -race -coverprofile=coverage.txt -covermode=atomic
-
+  - go vet -v $(go list ./... | grep -v /vendor/)
+  - megacheck -v $(go list ./... | grep -v /vendor/)
+  - gocyclo -over 19 $(go list ./... | grep -v /vendor/)
+  
 #after_success:
 #  - bash <(curl -s https://codecov.io/bash)
 #  - goveralls -service=travis-ci
