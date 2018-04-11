@@ -1,3 +1,15 @@
+[![Latest Version](https://img.shields.io/github/release/dmoneil2/sriov-cni.svg?style=flat-square)](https://github.com/dmoneil2/sriov-cni/releases) 
+[![GitHub last commit](https://img.shields.io/github/last-commit/dmoneil2/sriov-cni.svg?style=flat-square)](#) 
+[![HitCount](http://hits.dwyl.io/dmoneil2/sriov-cni.svg)](http://hits.dwyl.io/dmoneil2/sriov-cni) 
+[![Packagist Downloads](https://img.shields.io/packagist/dt/dmoneil2/sriov-cni.svg?style=flat-square)](https://packagist.org/packages/dmoneil2/sriov-cni) 
+
+
+[![Build Status](https://travis-ci.org/dmoneil2/sriov-cni.svg?branch=master&style=flat-square)](https://travis-ci.org/dmoneil2/sriov-cni) 
+[![Coverage Status](https://coveralls.io/repos/github/dmoneil2/sriov-cni/badge.svg?branch=master&style=flat-square)](https://coveralls.io/github/dmoneil2/sriov-cni) 
+[![CodeCov](https://codecov.io/gh/dmoneil2/sriov-cni/branch/master/graph/badge.svg?style=flat-square)](https://codecov.io/github/dmoneil2/sriov-cni/) 
+[![Code consistency](https://squizlabs.github.io/PHP_CodeSniffer/analysis/dmoneil2/sriov-cni/grade.svg?style=flat-square)](https://squizlabs.github.io/PHP_CodeSniffer/analysis/dmoneil2/sriov-cni)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/683459a5a71c4875956cf23078a0c39b)](https://www.codacy.com/app/dmoneil2/sriov-cni?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=dmoneil2/sriov-cni&amp;utm_campaign=Badge_Grade)
+
    * [SR-IOV CNI plugin](#sr-iov-cni-plugin)
       * [Build](#build)
       * [Enable SR-IOV](#enable-sr-iov)
